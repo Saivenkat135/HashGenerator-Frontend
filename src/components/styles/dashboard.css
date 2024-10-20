@@ -1,0 +1,24 @@
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-hash-part {
+  margin-bottom: 20px;
+}
+
+.saved-data {
+  margin-top: 20px;
+}
+
+.ordered-list {
+  padding-left: 20px;
+}
+
+.list {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
