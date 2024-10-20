@@ -1,0 +1,40 @@
+.savedDataItems {
+  margin-top: 150px;
+  margin-left: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  width: 700px;
+}
+
+/* Styles for the ordered list */
+.ordered-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+  width: 500px;
+}
+.noDataAvailable {
+  text-align: center;
+  padding: 150px;
+}
+/* Styles for each list item */
+.list {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  font-family: bold;
+  width: 600px;
+}
+.list:hover {
+  background-color: #e0e0e0;
+}
+
+/* Text styling inside each list item */
+.list strong {
+  font-weight: bold;
+  color: #333;
+}

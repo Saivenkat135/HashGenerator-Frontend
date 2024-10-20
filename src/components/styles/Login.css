@@ -1,0 +1,59 @@
+.signin {
+  text-align: center; /* Centers the text horizontally */
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 0;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  color: white;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 450px;
+  margin-top: 150px;
+  gap: 20px;
+  padding-left: 100px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-right: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  border-width: 4px;
+  box-shadow: 1px 2px 20px 2px black;
+}
+.login-form input {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+.login-form h1 {
+  font-size: 25px;
+  margin: 0;
+  padding-left: 0;
+  text-shadow: 1px 1px 20px black;
+}
+.submit-button {
+  /* padding: 0; */
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+.create-new-account {
+  text-align: center;
+}

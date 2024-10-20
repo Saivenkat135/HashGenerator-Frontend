@@ -1,0 +1,61 @@
+.signup {
+  text-align: center; /* Centers the text horizontally */
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 0;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  color: white;
+}
+.registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  /* margin: 500px; */
+  gap: 20px;
+
+  padding: 100px;
+  margin-top: 150px;
+  margin-left: 450px;
+  border: 2px solid black;
+  border-radius: 10px;
+  border-width: 4px;
+  box-shadow: 1px 2px 30px 2px black;
+}
+.registration-form input {
+  color: black;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 70px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 15px;
+}
+.registration-form input:hover {
+  background-color: rgb(150, 146, 146);
+}
+
+.registration-formh1 {
+  font-size: 25px;
+  margin: 0;
+  padding-left: 0;
+  text-shadow: 1px 3px 9px black;
+}
+.submit-button {
+  /* padding: 0; */
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
+.already {
+  text-align: center;
+}

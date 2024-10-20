@@ -1,0 +1,226 @@
+.guest-page {
+  /* background-color: rgb(107, 101, 101); */
+  margin-top: 0px;
+  top: 0px;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Changed to full viewport height for responsiveness */
+}
+body {
+  height: 100vh; /* Changed to full viewport height for responsiveness */
+}
+.form-data {
+  height: 1000px; /* Changed to full viewport height for responsiveness */
+}
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 0;
+  top: 0;
+  right: 0;
+  position: fixed;
+  left: 0;
+}
+/* In your GuestDashboard.css or styles.css */
+.header h1 {
+  text-align: center;
+  display: flex;
+  flex: 1;
+  /* margin-left: 350px; */
+}
+
+.header h1.center {
+  text-align: center; /* Center text for Dashboard */
+  padding-left: 0; /* Remove left padding */
+}
+.hash-image {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  margin-left: 35px;
+  border-radius: 35px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 30px; /* Font weight should be adjusted for better design */
+  margin-left: 30px;
+}
+.signup-signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  gap: 20px;
+}
+.saveddata-button {
+  margin-top: 5px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+.buttons {
+  margin-top: 40px;
+}
+.form-data {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-right: 125px;
+  margin-top: 700px;
+  margin-bottom: 100px;
+}
+.hashcode-generate {
+  border: 1px solid black;
+  border-radius: 5px;
+  border-width: 3px;
+  width: 1000px;
+  margin-right: 20px;
+  margin-top: 120px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  padding-left: 80px;
+  padding-bottom: 30px;
+}
+.generate-heading {
+  text-align: center;
+}
+.plaintxt-saltrounds {
+  margin-top: 50px;
+}
+.text {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: bold; /* Fixed font-weight */
+  font-size: 30px;
+  /* text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+.plaintext-input,
+.saltrounds-input {
+  padding: 20px;
+  padding-right: 700px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-width: 2px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Reduced shadow for subtle effect */
+}
+.hashcode-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Fixed typo */
+}
+.generate-reset {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  gap: 20px;
+  width: 500px;
+}
+.generate-button,
+.reset-button,
+.save-button {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow to avoid harsh effects */
+  font-size: 20px;
+}
+.generate-button {
+  background-color: rgb(103, 103, 201);
+}
+.reset-button {
+  background-color: rgb(212, 67, 67);
+}
+.save-button {
+  background-color: green;
+}
+.hashcode-content {
+  /* background-color: lightblue; */
+  display: flex;
+  font-size: 20px;
+}
+.hashcode-content h1 {
+  font-size: 25px;
+  margin: 0;
+}
+.copy-button {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 0; /* Removed negative margin to avoid misalignment */
+}
+.copied-message {
+  margin-left: 20px;
+  color: green;
+  font-size: 20px;
+}
+.hash-text {
+  margin-bottom: 0;
+}
+.highlight {
+  background-color: rgb(117, 99, 223);
+}
+.hashcompare {
+  border: 1px solid black;
+  border-radius: 5px;
+  border-width: 3px;
+  width: 1000px;
+  margin-right: 20px;
+  margin-top: 120px;
+  margin-left: 50px;
+  margin-bottom: 200px;
+  padding-left: 80px;
+  padding-bottom: 30px;
+}
+.hashcompare h1 {
+  text-align: center;
+}
+.hashcompare input {
+  padding: 20px;
+  padding-right: 700px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-width: 2px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.compare-button {
+  display: flex;
+  background-color: rgb(117, 117, 197);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 400px;
+  padding-right: 435px;
+  font-size: 18px;
+}
+.compare-success {
+  font-size: 25px;
+  margin: 0;
+  margin-left: 230px;
+  margin-top: 10px;
+  color: rgb(64, 196, 64);
+}
+.compare-failure {
+  font-size: 25px;
+  margin: 0;
+  margin-left: 230px;
+  margin-top: 10px;
+  color: rgb(202, 59, 59);
+}
+footer h1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
