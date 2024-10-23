@@ -58,8 +58,11 @@ function Registration() {
         <button onClick={HandleSubmit} className="submit-button">
           Submit
         </button>
-        <div>
-          Already have an account?&nbsp;<a onClick={signin}>Sign in</a>
+        <div className="already">
+          Already have an account?&nbsp;
+          <a onClick={signin} className="already-signin">
+            Sign in
+          </a>
         </div>
       </div>
     </div>

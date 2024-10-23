@@ -23,6 +23,7 @@ body {
   right: 0;
   position: fixed;
   left: 0;
+  z-index: 100;
 }
 /* In your GuestDashboard.css or styles.css */
 .header h1 {
@@ -59,6 +60,15 @@ body {
   margin-right: 25px;
   gap: 20px;
 }
+.sign-in,
+.sign-up {
+  outline: none;
+}
+.sign-in:hover,
+.sign-up:hover {
+  box-shadow: 0px 0px 30px rgb(73, 72, 72) inset;
+  border-color: black;
+}
 .saveddata-button {
   margin-top: 5px;
   margin-right: 20px;
@@ -77,21 +87,29 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-right: 125px;
+  padding-right: 75px;
   margin-top: 700px;
   margin-bottom: 100px;
 }
 .hashcode-generate {
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 20px;
   border-width: 3px;
-  width: 1100px;
-  margin-right: 20px;
-  margin-top: 120px;
+  width: 1000px;
+  /* margin-right: 10px; */
+  margin-top: 150px;
   margin-left: 75px;
   margin-bottom: 50px;
   padding-left: 80px;
+  padding-right: 40px;
   padding-bottom: 30px;
+  z-index: 2;
+  box-shadow: 0px 0px 30px rgb(70, 68, 68) inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hashcode-generate:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 30px rgb(0, 0, 0); /* Slightly adjusted for better visibility on hover */
 }
 .generate-heading {
   text-align: center;
@@ -108,15 +126,17 @@ body {
 }
 .plaintext-input,
 .saltrounds-input {
-  padding: 20px;
-  padding-right: 700px;
+  width: 100%; /* Makes the input field stretch to the full width */
+  padding: 20px; /* Use uniform padding */
   margin-bottom: 5px;
-  border: 1px solid black;
-  border-width: 2px;
+  border: 2px solid black; /* Combined border width into a single property */
   border-radius: 5px;
   font-size: 15px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Reduced shadow for subtle effect */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  margin-right: 20px;
 }
+
 .hashcode-container {
   display: flex;
   flex-direction: row;
@@ -173,38 +193,49 @@ body {
   background-color: rgb(117, 99, 223);
 }
 .hashcompare {
-  border: 1px solid black;
-  border-radius: 5px;
-  border-width: 3px;
-  width: 1100px;
-  margin-right: 20px;
+  border: 3px solid black; /* Combined border and border-width */
+  border-radius: 20px;
+  width: 1000px;
   margin-top: 120px;
   margin-left: 75px;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
   padding-left: 80px;
   padding-bottom: 30px;
+  padding-right: 40px;
+  z-index: 2;
+  box-shadow: 0px 0px 30px rgb(70, 68, 68) inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.hashcompare:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0); /* Slightly adjusted for better visibility on hover */
+}
+
 .hashcompare h1 {
   text-align: center;
 }
 .hashcompare input {
-  padding: 20px;
-  padding-right: 700px;
+  width: 100%; /* Makes the input field stretch to the full width */
+  padding: 20px; /* Use uniform padding */
   margin-bottom: 5px;
-  border: 1px solid black;
-  border-width: 2px;
+  border: 2px solid black; /* Combined border width into a single property */
   border-radius: 5px;
   font-size: 15px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Reduced shadow for subtle effect */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  margin-right: 20px;
 }
 .compare-button {
   display: flex;
   background-color: rgb(117, 117, 197);
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-left: 400px;
+  padding-left: 450px;
   padding-right: 435px;
   font-size: 18px;
+  width: 100%;
+  text-align: center;
 }
 .compare-success {
   font-size: 25px;
@@ -220,7 +251,9 @@ body {
   margin-top: 10px;
   color: rgb(202, 59, 59);
 }
-footer h1 {
+footer {
   text-align: center;
-  padding-bottom: 50px;
+}
+footer h1 {
+  margin-bottom: 0;
 }

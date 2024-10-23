@@ -20,16 +20,23 @@
 .registration-form {
   display: flex;
   flex-direction: column;
-  /* margin: 500px; */
-  gap: 20px;
-
-  padding: 100px;
-  margin-top: 150px;
   margin-left: 450px;
+  margin-top: 140px;
+  gap: 20px;
+  padding-left: 80px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-right: 100px;
   border: 2px solid black;
   border-radius: 10px;
   border-width: 4px;
-  box-shadow: 1px 2px 30px 2px black;
+  z-index: 1;
+  box-shadow: 1px 2px 20px 2px rgb(82, 78, 78) inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.registration-form:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0); /* Slightly adjusted for better visibility on hover */
 }
 .registration-form input {
   color: black;
@@ -39,9 +46,11 @@
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 15px;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 .registration-form input:hover {
-  background-color: rgb(150, 146, 146);
+  background-color: rgb(255, 249, 249);
+  box-shadow: 0px 0px 20px rgb(156, 153, 153);
 }
 
 .registration-formh1 {
@@ -55,7 +64,11 @@
   background-color: black;
   color: white;
   margin-top: 20px;
+  border-color: black;
 }
 .already {
   text-align: center;
+}
+.already-signin:hover {
+  text-decoration: underline;
 }

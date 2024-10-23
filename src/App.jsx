@@ -5,7 +5,7 @@ import Registration from "./components/Registration.jsx";
 import Login from "./components/Login.jsx";
 import About from "./components/About.jsx";
 import Dashboard from "./components/Dashboard.jsx";
-import SavedUserData from "./components/savedUserData.jsx";
+import SavedUserData from "./components/SavedUserData.jsx";
 
 function App() {
   return (
