@@ -13,7 +13,7 @@ function Login() {
   function HandleSubmit(e) {
     e.preventDefault(); // Prevent form submission from refreshing the page
 
-    fetch("http://localhost:3000/api/user-login", {
+    fetch("http://hashify-backend/api/user-login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Correct header name
