@@ -13,7 +13,7 @@ function Login() {
   function HandleSubmit(e) {
     e.preventDefault(); // Prevent form submission from refreshing the page
 
-    fetch("http://hashify-backend/api/user-login", {
+    fetch("https://hashify-backend/api/user-login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Correct header name
@@ -55,9 +55,11 @@ function Login() {
         <button onClick={HandleSubmit} className="submit-button">
           Submit
         </button>
-        <div className="create-new-account">
+        <div className="already">
           Create New Account ?&nbsp;
-          <a onClick={signup}>Sign Up</a>
+          <a onClick={signup} className="already-signup">
+            Sign Up
+          </a>
         </div>
       </div>
     </div>

@@ -10,25 +10,29 @@
   right: 0;
   position: absolute;
   color: white;
+  /* -webkit-text-stroke: 2px #000; */
 }
 .about-matter {
   font-size: 25px;
   font: 100;
   font-family: bold;
-  text-shadow: 1px 1px 10px black;
   border: 1px solid black;
   border-radius: 15px;
   border-width: 4px;
   box-shadow: 1px 2px 20px 2px black;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); */
+  /* background: linear-gradient(90deg, #cac6c2, #cac1c1); */
+  text-shadow: 0 0 5px #8f8186, 0 0 10px #d3c9cc, 0 0 15px #a5959b;
   width: 500px;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 20px;
-  margin-left: 400px;
-  margin-top: 300px;
+  padding: 50px;
+  margin-left: 370px;
+  margin-top: 400px;
   flex-direction: column;
+  padding-right: 40px;
 }
 .about-name {
   padding: 20px;
@@ -36,6 +40,9 @@
   background-color: black;
   color: white;
   border-radius: 75px;
-  margin-top: -55px;
+  margin-top: -80px;
   margin-bottom: 25px;
+}
+.about-name:hover {
+  color: white;
 }

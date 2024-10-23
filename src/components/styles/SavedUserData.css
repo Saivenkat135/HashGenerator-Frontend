@@ -32,7 +32,9 @@
 .list:hover {
   background-color: #e0e0e0;
 }
-
+li::marker {
+  content: "#️⃣";
+}
 /* Text styling inside each list item */
 .list strong {
   font-weight: bold;

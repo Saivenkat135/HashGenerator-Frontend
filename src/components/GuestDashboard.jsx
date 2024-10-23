@@ -195,7 +195,7 @@ function GuestDashboard({
           <p className="text">Enter the plain text to compare</p>
           <input
             className="compare-plaintxt"
-            placeholder="enter the plain text to compare"
+            placeholder="Enter the plain text to compare"
             value={plaintextcompare}
             type="string"
             onChange={(e) => setPlainTextCompare(e.target.value)}
@@ -203,7 +203,7 @@ function GuestDashboard({
           <p className="text">Enter the hash code text to compare</p>
           <input
             className="compare-hashcode"
-            placeholder="enter the hasCode to compare"
+            placeholder="Enter the hashCode to compare"
             type="String"
             value={hashcodecompare}
             onChange={(e) => setHashCodeComapre(e.target.value)}
@@ -220,6 +220,7 @@ function GuestDashboard({
       </div>
       <footer>
         <h1>This is my First Project</h1>
+        <h3>&copy; Sai Venkat</h3>
       </footer>
     </div>
   );
