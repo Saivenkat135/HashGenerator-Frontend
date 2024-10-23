@@ -12,7 +12,7 @@ function Registration() {
   }
 
   function HandleSubmit() {
-    fetch("https://hashify-backend/api/user-reg", {
+    fetch("https://hashify-backend.vercel.app/api/user-reg", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Corrected header name
