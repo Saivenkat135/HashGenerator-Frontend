@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header.jsx";
-import "./styles/login.css";
+import "./styles/Login.css";
 function Login() {
   const navigate = useNavigate();
   function signup() {
