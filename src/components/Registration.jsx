@@ -12,7 +12,7 @@ function Registration() {
   }
 
   function HandleSubmit() {
-    fetch("http://localhost:3000/api/user-reg", {
+    fetch("https://hashify-backend/api/user-reg", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Corrected header name

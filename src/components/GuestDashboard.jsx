@@ -24,7 +24,7 @@ function GuestDashboard({
   const email = location.state?.email;
 
   function fetchHashCode() {
-    fetch("http://localhost:3000/api/hash-code-convert", {
+    fetch("https://hashify-backend/api/hash-code-convert", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function GuestDashboard({
       .catch((error) => console.log(error));
   }
   function fetchHashCompare() {
-    fetch("http://localhost:3000/api/hash-code-compare", {
+    fetch("https://hashify-backend/api/hash-code-compare", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -73,7 +73,7 @@ function GuestDashboard({
       hashcode,
     });
 
-    fetch("http://localhost:3000/api/user-hashcode-save", {
+    fetch("https://hashify-backend/api/user-hashcode-save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -95,7 +95,7 @@ function GuestDashboard({
   };
 
   const fetchUserData = () => {
-    fetch("http://localhost:3000/api/user-dashboard", {
+    fetch("https://hashify-backend/api/user-dashboard", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
