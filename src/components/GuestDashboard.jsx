@@ -24,7 +24,7 @@ function GuestDashboard({
   const email = location.state?.email;
 
   function fetchHashCode() {
-    fetch("https://hashify-backend/api/hash-code-convert", {
+    fetch("https://hashify-backend.vercel.app/api/hash-code-convert", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function GuestDashboard({
       .catch((error) => console.log(error));
   }
   function fetchHashCompare() {
-    fetch("https://hashify-backend/api/hash-code-compare", {
+    fetch("https://hashify-backend.vercel.app/api/hash-code-compare", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -73,7 +73,7 @@ function GuestDashboard({
       hashcode,
     });
 
-    fetch("https://hashify-backend/api/user-hashcode-save", {
+    fetch("https://hashify-backend.vercel.app/api/user-hashcode-save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -95,7 +95,7 @@ function GuestDashboard({
   };
 
   const fetchUserData = () => {
-    fetch("https://hashify-backend/api/user-dashboard", {
+    fetch("https://hashify-backend.vercel.app/api/user-dashboard", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

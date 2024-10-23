@@ -7,7 +7,7 @@ function SavedUserData() {
   const email = location.state?.email;
   const [userData, setUserData] = useState([]);
   function fetchSavedData() {
-    fetch("http://localhost:3000/api/user-dashboard", {
+    fetch("https://hashify-backend.vercel.app/api/user-dashboard", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

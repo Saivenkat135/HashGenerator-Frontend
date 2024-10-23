@@ -13,7 +13,7 @@ function Login() {
   function HandleSubmit(e) {
     e.preventDefault(); // Prevent form submission from refreshing the page
 
-    fetch("https://hashify-backend/api/user-login", {
+    fetch("https://hashify-backend.vercel.app/api/user-login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Correct header name
