@@ -27,7 +27,7 @@ The Hash Code Converter is a web application that allows users to convert and co
 
 ### Clone the Repository
 
-```bash
+#bash
 git clone https://github.com/yourusername/hash-code-converter.git
 cd hash-code-converter
 
@@ -35,4 +35,3 @@ cd hash-code-converter
 Hello! I'm **Sai Venkat**, a passionate software developer with a focus on building efficient and user-friendly applications. I enjoy exploring new technologies and continuously improving my skills in web development. This project is a reflection of my interest in data security and hashing algorithms, and I hope it provides a useful tool for anyone looking to understand and work with hashes.
 
 Feel free to connect with me on [LinkedIn](www.linkedin.com/in/sai-venkat-12562828b) or check out my other projects on [GitHub](https://github.com/saivenkat135).
-```
