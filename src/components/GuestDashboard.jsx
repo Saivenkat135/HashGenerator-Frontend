@@ -178,12 +178,14 @@ function GuestDashboard({
           <div className="hashcode-container">
             {hashcode && (
               <div className="hashcode-content">
-                <h1>Generated Hash Code:&nbsp;</h1>
-                <div className={`hash-text ${copied ? "highlight" : ""}`}>
-                  <span className="hash-code">{hashcode}</span>
+                <h1>Hash Code:&nbsp;</h1>
+                <div className="hash-text">
+                  <span className={`hash-code ${copied ? "highlight" : ""}`}>
+                    {hashcode}
+                  </span>
                 </div>
                 <button onClick={copyToClipboard} className="copy-button">
-                  Copy Hash
+                  Copy
                 </button>
               </div>
             )}
