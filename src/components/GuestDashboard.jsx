@@ -6,9 +6,9 @@ function GuestDashboard({
   showAuthButtons = true,
   showSaveButton = false,
   showSavedData = false,
-  Email,
+  email,
 }) {
-  console.log("Guest dashboard email", Email);
+  // console.log("Guest dashboard email", email);
   const [plaintext, setPlainText] = useState("");
   const [saltrounds, setSaltRounds] = useState();
   const [hashcode, setHashCode] = useState("");
@@ -20,8 +20,6 @@ function GuestDashboard({
   const [userDate, setUserData] = useState([]);
 
   const navigate = useNavigate();
-  const location = useLocation();
-  const email = location.state?.email;
 
   function fetchHashCode() {
     fetch("https://hashify-backend.vercel.app/api/hash-code-convert", {
@@ -35,10 +33,10 @@ function GuestDashboard({
       .then((data) => {
         const generatedHashCode = data.data;
         setHashCode(generatedHashCode);
-        if (onSave) {
-          onSave(plaintext, saltrounds, generatedHashCode); // Use generated hash code
-          console.log("saved the details");
-        }
+        // if (onSave) {
+        //   onSave(plaintext, saltrounds, generatedHashCode); // Use generated hash code
+        //   console.log("saved the details");
+        // }
       })
       .catch((error) => console.log(error));
   }
@@ -67,7 +65,7 @@ function GuestDashboard({
 
   const handleSaveData = () => {
     console.log("Saving data:", {
-      Email,
+      email,
       plaintext,
       saltrounds,
       hashcode,
@@ -79,7 +77,7 @@ function GuestDashboard({
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        Email,
+        email,
         plaintext,
         saltrounds,
         hashcode,
@@ -89,6 +87,7 @@ function GuestDashboard({
       .then((data) => {
         console.log(data.message);
         // Optionally refresh user data after saving
+        alert(data.message);
         fetchUserData();
       })
       .catch((error) => console.log(error.message));
@@ -116,11 +115,11 @@ function GuestDashboard({
 
   useEffect(() => {
     fetchUserData();
-  }, [Email]); // Dependency array to fetch data when email changes
+  }, [email]); // Dependency array to fetch data when email changes
 
   function reset() {
     setPlainText("");
-    setSaltRounds(0);
+    setSaltRounds("");
   }
 
   function copyToClipboard() {
@@ -137,7 +136,7 @@ function GuestDashboard({
       <Header
         showAuthButtons={showAuthButtons}
         showSavedData={showSavedData}
-        email={Email}
+        email={email}
       />
       <div className="form-data">
         <div className="hashcode-generate">

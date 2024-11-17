@@ -15,8 +15,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Registration />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/saved-user-data" element={<SavedUserData />} />
+        <Route path="/dashboard/:email" element={<Dashboard />} />
+        <Route path="/saved-user-data/:email" element={<SavedUserData />} />
       </Routes>
     </Router>
   );

@@ -5,7 +5,8 @@ import hashImage from "./hash-image.jpg";
 import "./styles/Header.css"; // Create a separate CSS file for the header
 function Header({ showAuthButtons = true, showSavedData = false, email }) {
   const navigate = useNavigate();
-  console.log("header email", email);
+  // console.log("Email in header is:", email);
+  const EncodedEmail = btoa(email);
   function homepage() {
     navigate("/");
   }
@@ -38,9 +39,7 @@ function Header({ showAuthButtons = true, showSavedData = false, email }) {
         )}
         {showSavedData && (
           <div
-            onClick={() =>
-              navigate("/saved-user-data", { state: { email: email } })
-            }
+            onClick={() => navigate(`/saved-user-data/${EncodedEmail}`)}
             className="saveddata-button"
           >
             Saved hashes

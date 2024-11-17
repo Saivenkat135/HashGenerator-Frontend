@@ -1,0 +1,8 @@
+user-hashcode-save endpoint schema
+
+{
+      "Email":"sai@gmail.com",
+      "plaintext":"Sa@12",
+      "saltrounds":10,
+      "hashcode":"$2b$10$Tj0ZiHbUuITwqICZnFYaWui35toVHMRZCDeWdeFtoohqDJLgZar4G"
+}

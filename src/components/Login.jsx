@@ -24,7 +24,8 @@ function Login() {
       .then((data) => {
         if (data.success) {
           alert(data.message);
-          navigate("/dashboard", { state: { email: email } });
+          const encodedUserId = btoa(email);
+          navigate(`/dashboard/${encodedUserId}`);
         } else {
           alert(data.message);
         }
