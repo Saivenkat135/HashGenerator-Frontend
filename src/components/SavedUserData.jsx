@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Header from "./Header.jsx";
 import "./styles/SavedUserData.css";
 function SavedUserData() {
-  const location = useLocation();
-  const email = location.state?.email;
+  const { email } = useParams();
+  let DecodedEmail;
+  try {
+    DecodedEmail = atob(email); // Decode the Base64 string
+  } catch (error) {
+    console.error("Failed to decode email:", error);
+    DecodedEmail = "Invalid Email"; // Fallback value if decoding fails
+  }
+  // console.log("decodedEmail is saved URL", DecodedEmail);
   const [userData, setUserData] = useState([]);
   function fetchSavedData() {
     fetch("https://hashify-backend.vercel.app/api/user-dashboard", {
@@ -12,7 +19,7 @@ function SavedUserData() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email: email }),
+      body: JSON.stringify({ email: DecodedEmail }),
     })
       .then((response) => response.json())
       .then((data) => {

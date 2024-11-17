@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import GuestDashboard from "./GuestDashboard";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import "./styles/GuestDashboard.css";
 import "./styles/dashboard.css";
 
 function Dashboard() {
-  const location = useLocation();
-  const email = location.state?.email;
-  console.log("Email in dashboard", email);
-
+  const { email } = useParams();
+  let decodedEmail;
+  try {
+    decodedEmail = atob(email); // Decode the Base64 string
+  } catch (error) {
+    console.error("Failed to decode email:", error);
+    decodedEmail = "Invalid Email"; // Fallback value if decoding fails
+  }
   return (
     <div className="dashboard">
       <div className="dashboard-hash-part">
@@ -16,7 +20,7 @@ function Dashboard() {
           showAuthButtons={false}
           showSaveButton={true}
           showSavedData={true}
-          Email={email}
+          email={decodedEmail}
         />
         {/* Only show the Save button here
         <button onClick={handleSaveData} className="save-button">
